@@ -4,6 +4,7 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import org.openqa.selenium.json.Json;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import static org.hamcrest.Matchers.*;
 
@@ -18,6 +19,7 @@ public class Basics {
         // when - submit specific API
         //-post details or put details in when
         //  -resource and httpmethod will always go under when method
+
 
         // then method -validate the response
         // -what api got generated here
@@ -93,5 +95,10 @@ public class Basics {
         // 1. add place 2. put place and update. 3. get place to retrive added inntiallty and verify
 
 
+    }
+    @Test
+    public void test(){
+        System.out.println(payload.CoursePrice());
+        Assert.assertFalse(true);
     }
 }
